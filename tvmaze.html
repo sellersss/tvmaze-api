@@ -6,8 +6,15 @@
       rel="stylesheet"
       href="https://unpkg.com/bootstrap/dist/css/bootstrap.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cyborg/bootstrap.min.css"
+      integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
+    <!-- Search -->
     <div class="container-fluid">
       <h1 class="display-4">TV Maze</h1>
 
@@ -16,16 +23,32 @@
         <button class="btn btn-primary ml-2" type="submit">Go!</button>
       </form>
 
+      <!-- Show cards -->
       <div class="row mt-3" id="shows-list"></div>
 
+      <!-- Seasons/Episodes on .Show -->
       <section style="display: none" id="episodes-area">
         <h2>Episodes</h2>
         <ul id="episodes-list"></ul>
       </section>
-
-      <script src="http://unpkg.com/jquery"></script>
-      <script src="http://unpkg.com/axios/dist/axios.js"></script>
-      <script src="tvmaze.js"></script>
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://unpkg.com/axios/dist/axios.js"></script>
+    <script src="tvmaze.js"></script>
   </body>
 </html>
